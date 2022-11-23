@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <link rel="stylesheet" href="/css/main.css">
+        <title>Seattle Hadiya community association</title>
+    </head>
+    <body>
+        <header>
+            we are together to help each other!!
+        </header>
+        
+        <!-- this is the beginning of top navigation bar -->
+        <!-- this is the top navigation bar -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about__us">About Us</a></li>
+                <li><a href="#member">Members</a></li>
+                <li><a href="#we-do">What We Do</a></li>
+                <li><a href="#form">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- this is the end of top navigation bar -->
+
+        <img src="image/Brainstorm.jpg" alt="image with community text">
+        <h1>When spiders unite, they can tie down a Lion!!</h1>  
+        <main>
+
+            <!--about the association-->
+            <section class="about-us" id="about__us">
+                <h2>About Us</h2>
+                <p>Seattle Hadiya community unincorporated association is a 
+                    nonprofit association organized by the hadiya nation in 
+                    Seattle in 2019 to assist its member <span id="threeDots">...</span>
+                    <span id="moreOptions">in an emergency, 
+                    especially in covering funeral and related expenses for the 
+                    deceased family. Also, the organization give 
+                    non-monetary service to its member. Besides, 
+                    the association provides moral and physical support to the 
+                    affected family and establishes close social bonds between members and 
+                    family members.</span>
+                </p>
+                <button onclick="myParagraph()" id="myButton">Read more</button>
+            </section>
+
+            <!--about the members information of the association-->
+            <section class="our-members" id="member">
+                <h2>Our Members</h2>
+                <p>The association has 35 members, and the number expected to 
+                    grow in the next two-three years. The members are responsible 
+                    for raising funds for the association once a year, and 
+                    the amount they supposed to contribute decided by the management group.
+                    In addition to fundraising, the members are responsible for other social 
+                    life-related obligation. 
+                </p>
+            </section>
+
+            <!--what the community do -->
+            <section class="what-we-do" id="we-do">
+                <h2>What We Do</h2>
+                <p>The Seattle Hadiya community association's mission is giving relief to the 
+                    members in a time of financial hardship that happened because of death in his family.<br> 
+                    When we say family, it means the family of both husband and wife sides.<br> 
+                    Even if the association's target is giving financial hardship relief to its member, 
+                    the association also provides some non-financial service.<br> 
+                    Non-financial service includes treating the deceased family psychologically. 
+                </p>
+            </section>
+        </main>
+
+        <!--Contact form-->
+        <section class="form-container" id="form">
+            <h2>Contact Us</h2>         
+                <form action="#" class="contact__form">               
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname">
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname">
+                    <label for="pnumber">Phone Number:</label>
+                    <input type="text" id="pnumber" name="pnumber">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Write Your Message..."> </textarea>
+                    <input type="submit" value="submit">
+                </form>
+        </section>
+
+        <!--contact address-->
+        <section class="contact-address">
+            <h3>Our physical address</h3>           
+            <p>
+                <strong>Mailing Address</strong>
+                <br>
+                    17231 32nd Ave S
+                <br>
+                <strong>Phone Number</strong>
+                <br>
+                    206-945-0000
+                <br>
+            </p>
+            <a href="mailto:bekiteshome25@gmail.com">Email Us</a>           
+        </section>
+        
+        <!--Footer of the page -->
+        <footer>
+            <ul>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="#about__us">About Us</a>
+                </li>
+                <li>
+                <li>
+                    <a href="#member">Members</a>
+                </li>
+                <li>
+                    <a href="#we-do">What We do</a>
+                </li>
+                <li>
+                    <a href="#form">contact</a>
+                </li>
+        </ul>
+        <p class="copyright">&copy; <span id="year"></span> Seattle Hadiya community Association.  All Rights Reserved.</p>
+        </footer>
+        <script>
+            function myParagraph() {
+                let dots = document.getElementById("threeDots");
+                let moreText = document.getElementById("moreOptions");
+                let btnText = document.getElementById("myButton");
+            
+                if (dots .style.display === "none") {
+                    dots .style.display = "inline";
+                    btnText .innerHTML = "Read more";
+                    moreText .style.display = "none";
+                } else {
+                    dots .style.display = "none";
+                    btnText .innerHTML = "Read less";
+                    moreText .style.display = "inline";
+                }
+            }
+                    document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,243 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* styling background image*/
+body {
+    background:url(/image/Helping.jpeg)rgba(255, 166, 0, 0.258);
+    background-repeat: no-repeat;
+    font-family: Georgia, Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* styling the header*/
+header{
+    margin-top: 1em;
+    margin-bottom: 0.1em;
+    color:#11c90b;
+    font-size:1.2em;
+    text-transform:capitalize;
+    text-align:center;
+    font-family:'Times New Roman', Times, serif;
+}
+
+/* styling the navigation part */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    overflow:hidden;
+    background-color: #444444;   
+}
+
+li {
+    float: left;
+    
+}
+
+li a {
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #64bc56;
+    color: black;
+}
+
+img { 
+    width:20%;
+    height:20%;
+    border-radius:60%;
+    margin-top: 10em;
+    border: 3px solid black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {  
+    color:floralwhite;
+    font-family: "Sofia", sans-serif;  
+    text-align: center;
+    background:#33556e;
+    padding: 15px 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5em;
+    font-size: 1.2em;
+    width: 50%;    
+}
+
+h2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+}
+
+/* javascript section */
+#moreOptions {
+    display: none;
+}
+
+/* styling clicking button*/
+#myButton {
+    background-color: #33556e;
+    color: white;
+    padding: 0.5em 0.5em;
+    border: none;
+    margin-left: 1em;
+}
+
+/* styling the main container */
+main {
+    column-count: 3;
+    column-gap: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 210px;
+    display: flex;
+    overflow: hidden;
+    background-color: rgb(222, 252, 253);
+}
+
+/* styling the section part*/
+main > section {
+    box-sizing:border-box;
+    border: 0.1em solid black;
+    padding: 15px 0 15px;
+    background:linear-gradient(rgb(251, 244, 244), rgba(243, 237, 230, 0.869));
+    width: 50%;
+}
+
+main > section p {
+    font-size: 0.8em;
+    color:rgb(70, 67, 67);
+    margin: 10px 10px;
+    line-height: 1.6;    
+}
+
+/* styling contact form */
+.form-container {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 1em;   
+}
+
+.form-container h2 {
+    color: black;
+    text-align: center;
+
+}
+
+.contact__form { 
+    background-color: gray;
+    display:inline-block;
+    color: black;
+    font-size: 0.8em;
+    text-align: left;
+    margin-left: 0.2em;
+    padding: 1em 1em;
+  }
+
+input[type=text],select, textarea {
+    width:auto;
+    padding: 0.5em 0.5em;									 
+    border: 0.1em solid rgb(21, 21, 21);
+    resize: vertical;
+}
+
+input, label { 
+    padding: 5px;
+    width: auto;
+    margin: 2px 2px;
+    display: grid;
+}		 
+
+input[type=submit] {
+    background-color:#4caf50;
+    color:white;
+    padding: 1em 1em;
+    border: none;				 
+    cursor: pointer;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+input[type=submit]:hover {
+    background-color:green;
+    font-size: 0.7em;   
+}
+
+.contact-address {
+    background-color: #33556e;
+    padding: 15px 15px;
+    line-height: 1.6;
+    font-size: 0.7em;
+    margin-right: 5px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.contact-address h3 {
+    color:rgb(126, 238, 15);
+}
+
+.contact-address p {
+    text-decoration: none;
+    color: white;
+}
+
+.contact-address a {
+    text-decoration: none;
+    color: white;
+    
+}
+footer { 
+    padding: 40px 0;
+    background: rgb(27, 27, 27);
+    margin-top: 5px;
+    text-align: center;
+}
+
+footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-decoration: none;
+    color: white;
+    display: inline-flex;  
+    text-align: center;
+}
+footer ul li a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+    
+}
+footer ul li {
+    display: inline-block;
+    
+}
+footer ul li a:hover {
+    opacity: 1;
+}
+       
+footer .copyright {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+}
+
+
